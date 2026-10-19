@@ -52,3 +52,55 @@ hospital-pharmacy-analytics/
  │   └── Dashboard_Farmacia_Hospitalar.pbix  # Arquivo do Power BI
  ├── .gitignore                         # Configuração de arquivos ignorados
  └── README.md                          # Documentação do projeto
+
+🔄 Fluxo de Trabalho e Pipeline de Dados (ETL)
+Ingestão e Tratamento (Python):
+
+Padronização de strings (strip(), remoção de caracteres especiais e caixa alta).
+
+Conversão e validação de tipos de dados (datas e identificadores).
+
+Tratamento de valores ausentes e remoção de registros duplicados.
+
+Persistência (SQLite):
+
+Criação da tabela Solicitacao_Farmacia_Clean no banco de dados banco.db.
+
+Exportação do dataset limpo final para consumo direto pelo Power BI (farmacia_hospitalar_powerbi.csv).
+
+Modelagem DAX & Visualização (Power BI):
+
+Criação de medidas essenciais em DAX:
+
+[Total Solicitacoes]
+
+[Total Rupturas]
+
+[Taxa de Atendimento %]
+
+Desenvolvimento do painel de monitoramento focado em KPIs de nível de serviço.
+
+💡 Principais Insights de Negócio
+Concentração Crítica: Mais de 60% das rupturas registradas concentram-se em setores de alta prioridade (UTI e Pronto Socorro), com destaque para as categorias de Antibióticos e Analgésicos.
+
+Sazonalidade e Picos: Identificou-se um aumento expressivo nas solicitações não atendidas no meio do trimestre, apontando para a necessidade de reajuste nas rotas de distribuição interna e renegociação de lead times com fornecedores chave.
+
+Ação Recomendada: Implementação de alertas de estoque crítico no Power BI e revisão do cálculo de estoque de segurança por categoria.
+
+🚀 Como Executar o Projeto
+Clonar o Repositório:
+
+Bash
+git clone [https://github.com/jeandrade75/hospital-pharmacy-analytics.git](https://github.com/jeandrade75/hospital-pharmacy-analytics.git)
+Executar o Pipeline de Tratamento:
+
+Abra o notebook notebooks/ETL_Limpeza_Farmacia.ipynb no Google Colab ou Jupyter Notebook e execute as células sequencialmente.
+
+Visualizar o Dashboard:
+
+Certifique-se de ter o Power BI Desktop instalado.
+
+Abra o arquivo dashboard/Dashboard_Farmacia_Hospitalar.pbix.
+
+✍️ Autor
+Jean Andrade — LinkedIn | GitHub

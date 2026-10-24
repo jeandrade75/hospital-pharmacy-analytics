@@ -102,8 +102,5 @@ Certifique-se de ter o Power BI Desktop instalado.
 
 Abra o arquivo dashboard/Dashboard_Farmacia_Hospitalar.pbix.
 
-<img width="839" height="469" alt="image" src="https://github.com/user-attachments/assets/2e62aa7f-5306-4a64-8117-efcfa633a50e" />
-
-
 ✍️ Autor
 Jean Andrade — LinkedIn | GitHub
